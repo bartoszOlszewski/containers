@@ -10,4 +10,12 @@ body {
 .wrapper {
   max-width: 1200px;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
 /*# sourceMappingURL=styles.css.map */
