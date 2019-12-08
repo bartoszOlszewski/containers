@@ -10,28 +10,36 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav>
-                <div class="logo"><a href="#">red<span class="sec-color">skip</span>.pl</a></div>
-                <ul class="top-menu">
-                    <li class="top-menu__item">Oferta</li>
-                    <li class="top-menu__item">Wymiar kontenerów</li>
-                    <li class="top-menu__item">Cennik</li>
-                    <li class="top-menu__item pricing-button">Wyceń usługę</li>
-                </ul>
-            </nav>
+            <div class="nav nav--home">
+                <!-- logo sciagneło mi się w png ale coś jest nie tak - sprawdzić później -->
+                <div class="logo"><a href="#" class="brand"><img src="/img/redskip.pl.svg" alt="redskip logo"></a></div>
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__element">Oferta</li>
+                        <li class="menu__element">Wymiar kontenerów</li>
+                        <li class="menu__element">Cennik</li>
+                    </ul>
+                    <button class="btn btn--primary js-open-form">Wyceń usługę</button>
+                </div>
+            </div>
         </div>
     </header>
-    <section class="page-title">
-        <div class="container">
-            <h1><span class="sec-color">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i innych odpadów w kontenerach
+    <section class="hero">
+        <div class="container hero__wrapper">
+            <h1 class="hero__title"><span class="color-primary">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i innych
+                odpadów w kontenerach
             </h1>
-            <p>Wyceń wywóz gruzu lub innych odpadów</p>
-            <form action="text">
-                <input type="text" placeholder="Wpisz kod pocztowy">
+            <p class="paragraph">Wyceń wywóz gruzu lub innych odpadów</p>
+            <form class="form hero__form">
+                <div class="form__row">
+                    <img src="/img/Path.svg" alt="location icon" class="form__input-ico">
+                    <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
+                </div>
+                <input type="submit" class="btn btn--primary js-open-form" value="Wyceń usługę">
             </form>
-            <button>Wyceń usługę</button>
+
         </div>
     </section>
     <section class="main-info">
@@ -62,7 +70,7 @@
     </section>
     <section class="offer-details">
         <div class="container">
-            <!-- poprawka w stozunku do projektu - usunięcie kropki z tekstu -->
+            <!-- poprawka w stosunku do projektu - usunięcie kropki z tekstu -->
             <h2>Nasza oferta to nie tylko wywóz gruzu</h2>
             <h4 class="paragraf-title">Oferujemy</h4>
             <div class="list">
@@ -95,11 +103,12 @@
             <div class="details">
                 <h4 class="paragraf-title">Dodatkowe informacje</h4>
                 <!-- jedna poprawka w paragrafie - brakujące 'się', zastanowił bym się czy nie zmienic trochę tekstu - "podstronie" ??-->
-                <p>Na stronie <a class="sec-color" href="#">wymiary kontenerów</a> znajdzsiesz orientacyjne wymiary
+                <p>Na stronie <a class="color-primary" href="#">wymiary kontenerów</a> znajdzsiesz orientacyjne wymiary
                     kontenerów z opisem
                     sytuacji, w których taki kontener się sprawdzi i do jakich odpadów jest przeznaczony. Jeśli szukasz
                     wiadomości na temat rodzajów odpadów, jakie mozna wrzucić do kontenera to znajdziesz je na
-                    podstronie <a class="sec-color" href="#">porady i informacje</a>. Na tej samej stronie umieszczone
+                    podstronie <a class="color-primary" href="#">porady i informacje</a>. Na tej samej stronie
+                    umieszczone
                     są też informacje
                     na temat - pozwolenia na zajęcie pasa ruchu - tam dowiesz się czy potrzebujesz takiego pozwolenia
                     przy zamawianiu kontenera.</p>
@@ -140,7 +149,7 @@
     </section>
     <footer>
         <div class="container">
-            <div class="logo">red<span class="sec-color">skip</span>.pl</div>
+            <div class="logo"><a href="#" class="brand"><img src="/img/redskip.pl.png" alt="redskip logo"></a></div>
             <div class="footer-menu">
                 <ul>
                     <li>Redskip</li>

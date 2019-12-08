@@ -1,5 +1,6 @@
 @import 'functions';
 @import 'variables';
+@import 'mixins';
 @import 'nav';
 
 
@@ -9,6 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: $primaryFont;
+    color: #262626;
 }
 
 .wrapper {
@@ -17,8 +19,16 @@ body {
 
 a {
     text-decoration: none;
+    color: #262626;
 }
 
 ul {
     list-style: none;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 90%;
+    padding: 0 15px;
 }
