@@ -1,3 +1,10 @@
+.hero {
+
+    display: relative;
+    width: 100%;
+    height: 446px;
+}
+
 .hero__title {
     width: 839px;
     margin: 0 auto;
@@ -8,7 +15,6 @@
 }
 
 .paragraph--size-l {
-    all: unset;
     margin-top: 32px;
     font-size: calc-em(18px);
     text-align: center;
@@ -20,11 +26,27 @@
 }
 
 .form__row {
-    all: unset;
+    position: relative;
     width: 350px;
     height: 50px;
     box-shadow: $box-shadow;
     border-radius: 5px;
     border: 2px solid #4044df;
     background-color: $primaryBgColor;
+}
+
+.form__input-ico {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    line-height: 50px;
+    padding-left: 18px;
+    padding-top: 8px;
+}
+
+.form__input {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    padding: 0;
 }
