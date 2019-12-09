@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'nav';
 @import 'hero';
+@import 'main-info';
 
 body {
     font-size: 16px;
@@ -40,4 +41,9 @@ ul {
 
 .color-primary {
     color: $color-primary;
+}
+
+.paragraph--size-l {
+    font-size: calc-em(18px);
+    line-height: 2;
 }
