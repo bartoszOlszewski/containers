@@ -1,0 +1,41 @@
+.details {
+    position: relative;
+}
+
+.details__title {
+    width: 55%;
+    font-size: calc-em(64px);
+}
+
+.paragraph-title {
+    font-size: calc-em(24px);
+}
+
+.oval {
+    margin-right: 20px;
+}
+
+.details__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.details__list-item {
+    display: flex;
+    flex-basis: 45%;
+}
+
+.details__serv {
+    display: block;
+    width: 55%;
+}
+
+.details__img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: scale(.8);
+}
