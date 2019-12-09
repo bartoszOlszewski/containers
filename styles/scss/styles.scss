@@ -8,13 +8,18 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: none;
     font-family: $primaryFont;
     color: #262626;
 }
 
 .wrapper {
     max-width: 1200px;
+}
+
+button {
+    all: unset;
+    font-size: calc-em(14px);
 }
 
 a {
