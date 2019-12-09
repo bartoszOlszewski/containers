@@ -209,11 +209,39 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
 
 .main-info__contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 248px;
   height: 75px;
+}
+
+.slogan__container {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 1170px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slogan-box {
+  width: 25%;
 }
 
 body {
@@ -253,6 +281,10 @@ ul {
 
 .color-primary {
   color: #4044df;
+}
+
+.color-secondary {
+  color: #fff;
 }
 
 .paragraph--size-l {

@@ -43,6 +43,10 @@ ul {
     color: $color-primary;
 }
 
+.color-secondary {
+    color: $color-secondary;
+}
+
 .paragraph--size-l {
     font-size: calc-em(18px);
     line-height: 2;

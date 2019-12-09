@@ -53,9 +53,29 @@
 
 .main-info__contact {
     display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
 }
 
 .main-info__contact-box {
+    display: flex;
     width: 248px;
     height: 75px;
+}
+
+.slogan__container {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1170px;
+    left: 50%;
+    // bottom: 0;
+    transform: translateX(-50%);
+
+}
+
+.slogan-box {
+    width: 25%;
 }
