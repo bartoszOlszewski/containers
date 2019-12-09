@@ -65,17 +65,24 @@
 }
 
 .slogan__container {
-    position: absolute;
+    position: relative;
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 1170px;
     left: 50%;
-    // bottom: 0;
+    bottom: 10%;
     transform: translateX(-50%);
 
 }
 
 .slogan-box {
+    display: inline-flex;
+    flex-direction: column;
     width: 25%;
+    margin-right: 40px;
+}
+
+.slogan__logo {
+    width: 50px;
 }

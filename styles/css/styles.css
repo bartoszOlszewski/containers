@@ -223,7 +223,7 @@
 }
 
 .slogan__container {
-  position: absolute;
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -236,12 +236,25 @@
           justify-content: flex-start;
   width: 1170px;
   left: 50%;
+  bottom: 10%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
 .slogan-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 25%;
+  margin-right: 40px;
+}
+
+.slogan__logo {
+  width: 50px;
 }
 
 body {
