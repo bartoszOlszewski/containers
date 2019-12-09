@@ -12,3 +12,10 @@
         clear: both;
     }
 }
+
+// box-sizing
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}

@@ -1,6 +1,6 @@
 .site-header {
     width: 100%;
-    height: 400px;
+    height: 196px;
 }
 
 .brand {
@@ -52,7 +52,7 @@
     line-height: 50px;
     text-align: center;
     background-color: $secBgColor;
-    box-shadow: 0 6px 12px rgba(64, 68, 223, 0.36);
+    box-shadow: $box-shadow;
     color: $color-secondary;
     border-radius: 5px;
 }

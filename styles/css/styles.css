@@ -1,6 +1,6 @@
 .site-header {
   width: 100%;
-  height: 400px;
+  height: 196px;
 }
 
 .brand {
@@ -95,6 +95,30 @@
   line-height: 50px;
 }
 
+.hero__title {
+  width: 839px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.paragraph--size-l {
+  margin-top: 32px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.hero__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
   font-size: 16px;
   margin: 0;
@@ -128,5 +152,9 @@ ul {
   width: 100%;
   max-width: 90%;
   padding: 0 15px;
+}
+
+.color-primary {
+  color: #4044df;
 }
 /*# sourceMappingURL=styles.css.map */

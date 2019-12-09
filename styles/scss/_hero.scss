@@ -1,0 +1,30 @@
+.hero__title {
+    width: 839px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: calc-em(48px);
+    font-weight: 500;
+    text-align: center;
+}
+
+.paragraph--size-l {
+    all: unset;
+    margin-top: 32px;
+    font-size: calc-em(18px);
+    text-align: center;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__row {
+    all: unset;
+    width: 350px;
+    height: 50px;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    border: 2px solid #4044df;
+    background-color: $primaryBgColor;
+}
