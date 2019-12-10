@@ -1,0 +1,51 @@
+.anna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 100vh;
+
+    &__h1 {
+        flex-basis: 10vh;
+        text-align: center;
+        line-height: 10vh;
+    }
+
+    &__list {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+
+    &__item {
+        display: block;
+        width: 100%;
+        flex-basis: 21%;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1150px) {
+    .anna__item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .anna {
+        &__h1 {
+            flex-basis: 5vh;
+            line-height: 5vh;
+            font-size: 1.5em;
+        }
+
+        &__item {
+            flex-basis: 80%;
+        }
+    }
+}
