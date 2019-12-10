@@ -13,12 +13,30 @@ a {
     color: $color-Fbody;
 }
 
+.p-clear {
+    all: unset;
+}
+
 ul {
     list-style: none;
 }
 
 h2 {
     line-height: 1.2;
+}
+
+h3 {
+    font-size: calc-em(36px);
+    line-height: calc-em(48px);
+    font-weight: 700;
+}
+
+h5 {
+    font-size: calc-em(18px);
+}
+
+.ordered-list {
+    padding-inline-start: 40;
 }
 
 // CONTAINERS
@@ -84,6 +102,10 @@ strong {
 }
 
 
+.paragraph-title {
+    font-size: calc-em(24px);
+    font-weight: 700;
+}
 
 
 

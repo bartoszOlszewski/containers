@@ -122,44 +122,52 @@
         <div class="container">
             <!-- poprawka w stosunku do projektu - usunięcie kropki z tekstu -->
             <h2 class="details__title">Nasza oferta to nie tylko wywóz gruzu</h2>
-            <h4 class="details__paragraph-title">Oferujemy</h4>
+            <h4 class="paragraph-title">Oferujemy</h4>
             <div>
                 <ul class="details__list">
                     <li class="details__list-item">
                         <img src="/img/Oval.svg" alt="oval" class="oval">
-                        <p>wywóz śmieci po remoncie</p>
+                        <p class="p-clear">wywóz śmieci po remoncie</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz gruzu
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz gruzu</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz odpadów budowlanych
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz odpadów budowlanych</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz mebli i gabarytów
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz mebli i gabarytów</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz odpadów zielonych
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz odpadów zielonych</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz ziemi
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz ziemi</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz materiałów izolacyjnych
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz materiałów izolacyjnych</p>
                     </li>
                     <!-- korekta powtórzenia w tekscie z projektu -->
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz papy oraz innych śmieci
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz papy oraz innych śmieci</p>
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz odpadów i nieczystości w kontenerach
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p class="p-clear">wywóz odpadów i nieczystości w kontenerach</p>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="container">
             <div class="details__serv">
-                <h4 class="details__paragraph-title">Dodatkowe usługi, które możemy zaoferować</h4>
+                <h4 class="paragraph-title">Dodatkowe usługi, które możemy zaoferować</h4>
                 <p class="paragraph">Standardowo podstawiamy kontener na okres <strong> 5-7 dni roboczych.</strong>
                     Oprócz tego oferujemy również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na
                     załadowanie kontenera), <strong>ekspres</strong> (podstawienie tego samego dnia - tylko
@@ -171,7 +179,7 @@
     </section>
     <!-- class bardzo robocza - do skrócenia -->
     <section class="refs">
-        <div class="container">
+        <div class="container refs__container">
             <div class="refs__details">
                 <h4 class="paragraph-title">Dodatkowe informacje</h4>
                 <!-- jedna poprawka w paragrafie - brakujące 'się', zastanowił bym się czy nie zmienic trochę tekstu - "podstronie" ??-->
@@ -185,7 +193,7 @@
                     na temat - pozwolenia na zajęcie pasa ruchu - tam dowiesz się czy potrzebujesz takiego pozwolenia
                     przy zamawianiu kontenera.</p>
                 <h5>Oprócz podanych wyżej informacji na stronie z poradami znajdziesz odpowiedzi na pytania:</h5>
-                <ol>
+                <ol class="ordered-list">
                     <li>Jak wynająć kontener na śmieci?</li>
                     <li>Co jest wliczone w cenę usługi</li>
                     <li>Czy możliwy jest wynajem kontenera na jeden dzień?</li>
@@ -193,19 +201,27 @@
                 </ol>
             </div>
             <div class="refs__gallery">
-                <div class="opinion-1">
-                    <h3 class="reviev-title">"Podstawili kontener na czas, na plus też miła obsługa!"</h3>
-                    <p class="reviev-text"></p>
-                    <img src="" alt="" class="stars">
-
+                <div class="refs__opinion js-opinion-1">
+                    <h3 class="refs__opinion-title">"Podstawili kontener na czas, na plus też miła obsługa!"</h3>
+                    <p class="refs__opinion-text">Maciej W. ocenił redskip.pl na 5</p>
+                    <div class="refs__stars">
+                        <img src="/img/star.svg" alt="golden star" class="stars">
+                        <img src="/img/star.svg" alt="golden star" class="stars">
+                        <img src="/img/star.svg" alt="golden star" class="stars">
+                        <img src="/img/star.svg" alt="golden star" class="stars">
+                        <img src="/img/star.svg" alt="golden star" class="stars">
+                    </div>
                 </div>
-                <img src="" alt="" class="left-arrow">
-                <img src="" alt="" class="right-arrow">
+                <div>
+                    <img src="/img/arrow-left.svg" alt="left-arrow" class="refs__left-arrow">
+                    <img src="/img/arrow-right.svg" alt="right-arrow" class="refs__right-arrow">
+                </div>
             </div>
         </div>
     </section>
     <section class="cities">
         <div class="container">
+            <h3 class="cities__title">Jakie miasta obsługujemy</h3>
             <!-- zakładam że po kliku na miasto przekieruje do mapy gdzie będzie wyświetlony adres "biura w danym mieście" z zaznaczoną na mapie lokaliacją -->
             <ul>
                 <li>Wywóz gruzu i śmieci Gdańsk</li>
