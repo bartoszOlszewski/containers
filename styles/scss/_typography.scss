@@ -46,7 +46,16 @@ ul {
 
 // TAG STYLES
 
-button {
+.btn {
+    width: 180px;
+    height: 50px;
+    margin-left: 76px;
+    line-height: 50px;
+    text-align: center;
+    background-color: $secBgColor;
+    box-shadow: $box-shadow;
+    color: $color-secondary;
+    border-radius: 5px;
     font-size: calc-em(14px);
 }
 
@@ -67,6 +76,8 @@ strong {
 
 
 
+
+
 // COLOR CLASSES
 
 .color {
@@ -77,4 +88,10 @@ strong {
     &-secondary {
         color: $color-secondary;
     }
+}
+
+// LOGO
+
+.brand {
+    height: 50px;
 }

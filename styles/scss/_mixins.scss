@@ -19,3 +19,10 @@
     -moz-box-sizing: $type;
     box-sizing: $type;
 }
+
+// reset
+@mixin body-reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

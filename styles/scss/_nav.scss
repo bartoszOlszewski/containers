@@ -3,17 +3,11 @@
     height: 196px;
 }
 
-.brand {
-    height: 50px;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
-
-
 
 .logo {
     display: flex;
@@ -24,60 +18,45 @@
 
 .menu {
     display: flex;
-    // justify-content: flex-end;
-    // height: 50px;
-}
 
+    &__list {
+        all: unset;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        line-height: 50px;
+        font-size: calc-em(14px);
+    }
 
-.menu__list {
-    all: unset;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    line-height: 50px;
-    font-size: calc-em(14px);
-}
+    &__url {
+        padding: 0 20px 0 20px;
+    }
 
-.menu__url {
-    padding: 0 20px 0 20px;
-}
-
-.btn {
-    width: 180px;
-    height: 50px;
-    margin-left: 76px;
-    line-height: 50px;
-    text-align: center;
-    background-color: $secBgColor;
-    box-shadow: $box-shadow;
-    color: $color-secondary;
-    border-radius: 5px;
-}
-
-.menu__element {
-
-    height: 50px;
+    &__element {
+        height: 50px;
+    }
 }
 
 .hamburger {
     display: none;
 }
 
-.form__input-ico {
-    height: 20px;
-    width: 16px;
-    line-height: 50px;
-}
+.form {
+    &__input-ico {
+        height: 20px;
+        width: 16px;
+        line-height: 50px;
+    }
 
-.form__row {
-    color: $color-third;
+    &__row {
+        color: $color-third;
+    }
 
-}
-
-.form__input {
-    border-width: 0;
-    line-height: 50px;
+    &__input {
+        border-width: 0;
+        line-height: 50px;
+    }
 }
