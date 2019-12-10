@@ -32,12 +32,12 @@
         </div>
     </header>
     <section class="hero">
-        <div class="container hero__wrapper">
+        <div class="container">
             <h1 class="hero__title"><span class="color-primary">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i innych
                 odpadów w kontenerach
             </h1>
             <p class="paragraph--size-l hero__paragraph">Wyceń wywóz gruzu lub innych odpadów</p>
-            <form class="form hero__form">
+            <form class="hero__form">
                 <div class="form__row">
                     <img src="/img/location.svg" alt="location icon" class="form__input-ico">
                     <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
@@ -68,43 +68,51 @@
             <!-- mozna później spróbować zrobić div.shadow jako aftera -->
             <div class="main-info__shadow"></div>
             <div class="main-info__contact">
-                <div class="main-info__contact-box mobile">
-                    <a href="#"><img src="/img/mobile.svg" alt="mobile phone"></a>
-                    <a href="#"><img src="/img/mobile-number.svg" alt="mobile phone number"></a>
-                    <p class="paragraph">Nr kontaktowy dla telefonów komórkowych</p>
+                <div class="main-info__box">
+                    <a href="#" class="main-info__box-img"><img src="/img/mobile.svg" alt="mobile phone"></a>
+                    <div class="main-info__box-item">
+                        <a href="#" class="main-info__box-number">801 066 653</a>
+                        <p class="paragraph--size-s main-info__box-text">Nr kontaktowy dla telefonów komórkowych</p>
+                    </div>
                 </div>
-                <div class="main-info__contact-box office">
-                    <a href="#"><img src="/img/phone.svg" alt="office phone"></a>
-                    <a href="#"><img src="/img/office-number.svg" alt="office phone number"></a>
-                    <p class="paragraph">Nr kontaktowy dla telefonów stacjonarnych</p>
+                <div class="main-info__box">
+                    <a href="#" class="main-info__box-img"><img src="/img/phone.svg" alt="office phone"></a>
+                    <div class="main-info__box-item">
+                        <a href="#" class="main-info__box-number">22 270 60 50</a>
+                        <p class="paragraph--size-s main-info__box-text">Nr kontaktowy dla telefonów stacjonarnych</p>
+                    </div>
                 </div>
-                <div class="main-info__contact-box mail">
-                    <a href="#"><img src="/img/mail.svg" alt="mail"></a>
-                    <a href="#"><img src="/img/mail-adress.svg" alt="e-mail"></a>
-                    <p class="paragraph">Adres email dostępny dla każdego</p>
+                <div class="main-info__box">
+                    <a href="#" class="main-info__box-img"><img src="/img/mail.svg" alt="mail"></a>
+                    <div class="main-info__box-item">
+                        <a href="mailto:biuro@redskip.pl"  class="main-info__box-number">biuro@redskip.pl</a>
+                        <p class="paragraph--size-s  main-info__box-text">Adres email dostępny dla każdego</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="container color-secondary">
-            <div class="slogan-box slogan-price">
-                <img src="/img/checked.svg" alt="good price logo" class="slogan__logo">
-                <h3 class="slogan-price__title slogan__title">Zawsze dobra cena</h3>
-                <p class="paragraph slogan__paragraph">Nie możemy obiecać, że zawsze będziemy najtańsi, ale na podstawie
+        <div class="container main-info__slogan color-secondary">
+            <div class="main-info__slogan-box ">
+                <img src="/img/checked.svg" alt="good price logo" class="main-info__slogan-logo">
+                <h3 class="slogan-price__title main-info__slogan-title">Zawsze dobra cena</h3>
+                <p class="paragraph main-info__slogan-paragraph">Nie możemy obiecać, że zawsze będziemy najtańsi, ale na
+                    podstawie
                     analizy
                     porównawczej, jesteśmy pewni, że nasze ceny są konkurencyjne.</p>
             </div>
-            <div class="slogan-box slogan-time">
-                <img src="/img/time.svg" alt="clock face logo" class="slogan__logo">
-                <h3 class="slogan-time__title slogan__title">Kontener na czas</h3>
-                <p class="paragraph slogan__paragraph">Gwarantujemy, że dostarczymy kontener na czas. Jeśli pojawi się
+            <div class="main-info__slogan-box ">
+                <img src="/img/time.svg" alt="clock face logo" class="main-info__slogan-logo">
+                <h3 class="slogan-time__title main-info__slogan-title">Kontener na czas</h3>
+                <p class="paragraph main-info__slogan-paragraph">Gwarantujemy, że dostarczymy kontener na czas. Jeśli
+                    pojawi się
                     problem, a
                     kontenera nie będzie w umówionym terminie, zwrócimy Ci pieniądze.</p>
             </div>
-            <div class="slogan-box slogan-advice">
-                <img src="/img/good.svg" alt="thumb up logo" class="slogan__logo">
-                <h3 class="slogan-good__title slogan__title">Dobre rady</h3>
-                <p class="paragraph slogan__paragraph">Na naszych stronach znajdziesz wszystkie informacje, potrzebne do
+            <div class="main-info__slogan-box ">
+                <img src="/img/good.svg" alt="thumb up logo" class="main-info__slogan-logo">
+                <h3 class="slogan-good__title main-info__slogan-title">Dobre rady</h3>
+                <p class="paragraph main-info__slogan-paragraph">Na naszych stronach znajdziesz wszystkie informacje,
+                    potrzebne do
                     wynajmu kontenera
                     - od ich rozmiarów, do miejsca, w którym go postawić.</p>
             </div>
@@ -118,7 +126,8 @@
             <div>
                 <ul class="details__list">
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz śmieci po remoncie
+                        <img src="/img/Oval.svg" alt="oval" class="oval">
+                        <p>wywóz śmieci po remoncie</p>
                     </li>
                     <li class="details__list-item">
                         <img src="/img/Oval.svg" alt="oval" class="oval">wywóz gruzu
@@ -143,7 +152,7 @@
                         <img src="/img/Oval.svg" alt="oval" class="oval">wywóz papy oraz innych śmieci
                     </li>
                     <li class="details__list-item">
-                        <img src="/img/Oval.svg" alt="oval" class="oval">śwywóz odpadów i nieczystości w kontenerach
+                        <img src="/img/Oval.svg" alt="oval" class="oval">wywóz odpadów i nieczystości w kontenerach
                     </li>
                 </ul>
             </div>

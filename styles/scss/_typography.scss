@@ -4,6 +4,7 @@ body {
     @include body-reset;
     font-size: calc-em(16px);
     font-family: $primaryFont;
+    line-height: calc-em(32px);
     color: $color-Fbody;
 }
 
@@ -16,6 +17,9 @@ ul {
     list-style: none;
 }
 
+h2 {
+    line-height: 1.2;
+}
 
 // CONTAINERS
 
@@ -67,6 +71,11 @@ ul {
     &--size-l {
         font-size: calc-em(18px);
         line-height: 2;
+    }
+
+    &--size-s {
+        font-size: calc-em(14px);
+
     }
 }
 

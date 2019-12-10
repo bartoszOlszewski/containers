@@ -5,6 +5,7 @@ body {
           box-sizing: border-box;
   font-size: 1rem;
   font-family: "roboto", sans-serif;
+  line-height: 2rem;
   color: #262626;
 }
 
@@ -15,6 +16,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+h2 {
+  line-height: 1.2;
 }
 
 .wrapper {
@@ -56,6 +61,10 @@ ul {
 .paragraph--size-l {
   font-size: 1.125rem;
   line-height: 2;
+}
+
+.paragraph--size-s {
+  font-size: 0.875rem;
 }
 
 strong {
@@ -157,15 +166,16 @@ strong {
 .hero {
   display: relative;
   width: 100%;
-  height: 685px;
+  height: 740px;
 }
 
 .hero__title {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
+  line-height: 1.2;
 }
 
 .hero__paragraph {
@@ -217,9 +227,9 @@ strong {
 
 .main-info__desc {
   position: absolute;
-  width: 650px;
+  width: 50%;
   height: 456px;
-  padding: 50px;
+  padding: 5%;
 }
 
 .main-info__container {
@@ -229,16 +239,14 @@ strong {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 1170px;
-  height: 635px;
+  width: 90%;
+  height: 740px;
   border: 1px solid rgba(148, 151, 192, 0.2);
   background-color: #fff;
 }
 
 .main-info__title {
-  display: inline-block;
-  width: 380px;
-  margin: 0;
+  margin-bottom: 16px;
   font-size: 2.25rem;
 }
 
@@ -269,23 +277,78 @@ strong {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 10%;
-  left: 5%;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.main-info__contact-box {
+.main-info__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 248px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+  max-width: 250px;
   height: 75px;
 }
 
-.slogan__container {
+.main-info__box-img {
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.main-info__box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-info__box-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+
+.main-info__box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  opacity: .7;
+}
+
+.main-info__slogan {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 0;
+  bottom: 20%;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -293,14 +356,9 @@ strong {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 1170px;
-  left: 50%;
-  bottom: 10%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
-.slogan-box {
+.main-info__slogan-box {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -312,7 +370,7 @@ strong {
   margin-right: 7%;
 }
 
-.slogan__logo {
+.main-info__slogan-logo {
   width: 50px;
 }
 
@@ -325,15 +383,8 @@ strong {
   font-size: 4rem;
 }
 
-.paragraph-title {
-  font-size: 1.5rem;
-}
-
-.oval {
-  margin-right: 20px;
-}
-
 .details__list {
+  all: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,10 +404,11 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5;
 }
 
 .details__serv {
@@ -370,6 +422,14 @@ strong {
   right: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+.details__paragraph-title {
+  font-size: 1.5rem;
+}
+
+.oval {
+  margin-right: 20px;
 }
 
 .refs {
