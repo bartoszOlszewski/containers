@@ -26,11 +26,14 @@
 .details__list-item {
     display: flex;
     flex-basis: 45%;
+    font-size: calc-em(16px);
+    line-height: calc-em(32px);
 }
 
 .details__serv {
     display: block;
     width: 55%;
+
 }
 
 .details__img {

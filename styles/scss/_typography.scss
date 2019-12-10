@@ -1,0 +1,80 @@
+// STYLE RESET
+
+body {
+    @include body-reset;
+    font-size: calc-em(16px);
+    font-family: $primaryFont;
+    color: $color-Fbody;
+}
+
+a {
+    text-decoration: none;
+    color: $color-Fbody;
+}
+
+ul {
+    list-style: none;
+}
+
+
+// CONTAINERS
+
+// .container {
+//     display: block;
+//     width: 100%;
+//     max-width: 90%;
+//     padding: 0 15px;
+// }
+
+.wrapper {
+    max-width: 1200px;
+}
+
+.container {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+
+// TAG STYLES
+
+button {
+    font-size: calc-em(14px);
+}
+
+// <p>
+.paragraph {
+    font-size: calc-em(16px);
+    line-height: calc-em(24px);
+
+    &--size-l {
+        font-size: calc-em(18px);
+        line-height: 2;
+    }
+}
+
+strong {
+    font-size: calc-em(18px);
+}
+
+
+
+// COLOR CLASSES
+
+.color {
+    &-primary {
+        color: $color-primary;
+    }
+
+    &-secondary {
+        color: $color-secondary;
+    }
+}

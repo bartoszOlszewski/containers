@@ -1,3 +1,65 @@
+body {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
+
+.container {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+button {
+  font-size: 0.875rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.paragraph--size-l {
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+strong {
+  font-size: 1.125rem;
+}
+
+.color-primary {
+  color: #4044df;
+}
+
+.color-secondary {
+  color: #fff;
+}
+
 .site-header {
   width: 100%;
   height: 196px;
@@ -297,6 +359,8 @@
   display: flex;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .details__serv {
@@ -319,60 +383,6 @@
 
 .refs__details {
   display: block;
-  width: 31%;
-}
-
-.container {
-  display: block;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-@media (max-width: 900px) {
-  .container {
-    max-width: none;
-    width: 100%;
-  }
-}
-
-body {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: none;
-          box-sizing: none;
-  font-family: "roboto", sans-serif;
-  color: #262626;
-}
-
-.wrapper {
-  max-width: 1200px;
-}
-
-button {
-  all: unset;
-  font-size: 0.875rem;
-}
-
-a {
-  text-decoration: none;
-  color: #262626;
-}
-
-ul {
-  list-style: none;
-}
-
-.color-primary {
-  color: #4044df;
-}
-
-.color-secondary {
-  color: #fff;
-}
-
-.paragraph--size-l {
-  font-size: 1.125rem;
-  line-height: 2;
+  width: 45%;
 }
 /*# sourceMappingURL=styles.css.map */
