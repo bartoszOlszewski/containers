@@ -132,3 +132,58 @@ strong {
     font-weight: 700;
     font-size: calc-em(20px);
 }
+
+
+.form {
+    &__input-ico {
+        height: 20px;
+        width: 16px;
+        line-height: 50px;
+    }
+
+    &__row {
+        color: $color-third;
+        position: relative;
+        width: 350px;
+        height: 50px;
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        border: 2px solid #4044df;
+        background-color: $primaryBgColor;
+    }
+
+    &__input {
+        border-width: 0;
+        line-height: 50px;
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        padding: 0;
+
+        &-ico {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            line-height: 50px;
+            padding-left: 18px;
+            padding-top: 8px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .form {
+        &__row {
+            width: 180px;
+        }
+
+        &__input {
+            left: 25%;
+
+            &-ico {
+                padding-left: 20px;
+                padding-top: 8px;
+            }
+        }
+    }
+}

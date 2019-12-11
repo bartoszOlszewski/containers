@@ -113,6 +113,55 @@ strong {
   font-size: 1.25rem;
 }
 
+.form__input-ico {
+  height: 20px;
+  width: 16px;
+  line-height: 50px;
+}
+
+.form__row {
+  color: #8d91bc;
+  position: relative;
+  width: 350px;
+  height: 50px;
+  -webkit-box-shadow: 0 6px 12px rgba(64, 68, 223, 0.16);
+          box-shadow: 0 6px 12px rgba(64, 68, 223, 0.16);
+  border-radius: 5px;
+  border: 2px solid #4044df;
+  background-color: #fff;
+}
+
+.form__input {
+  border-width: 0;
+  line-height: 50px;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  padding: 0;
+}
+
+.form__input-ico {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  line-height: 50px;
+  padding-left: 18px;
+  padding-top: 8px;
+}
+
+@media (max-width: 500px) {
+  .form__row {
+    width: 180px;
+  }
+  .form__input {
+    left: 25%;
+  }
+  .form__input-ico {
+    padding-left: 20px;
+    padding-top: 8px;
+  }
+}
+
 .site-header {
   width: 100%;
   min-height: 200px;
@@ -167,7 +216,7 @@ strong {
 .hero {
   display: relative;
   width: 100%;
-  height: 740px;
+  min-height: 740px;
 }
 
 .hero__title {
@@ -193,46 +242,56 @@ strong {
           justify-content: center;
 }
 
-.form__input-ico {
-  height: 20px;
-  width: 16px;
-  line-height: 50px;
+@media (max-width: 1350px) {
+  .hero__title {
+    font-size: 2.625rem;
+  }
 }
 
-.form__row {
-  color: #8d91bc;
+@media (max-width: 1180px) {
+  .hero__title {
+    font-size: 2.375rem;
+  }
 }
 
-.form__input {
-  border-width: 0;
-  line-height: 50px;
+@media (max-width: 1070px) {
+  .hero__title {
+    font-size: 2.125rem;
+  }
 }
 
-.form__row {
-  position: relative;
-  width: 350px;
-  height: 50px;
-  -webkit-box-shadow: 0 6px 12px rgba(64, 68, 223, 0.16);
-          box-shadow: 0 6px 12px rgba(64, 68, 223, 0.16);
-  border-radius: 5px;
-  border: 2px solid #4044df;
-  background-color: #fff;
+@media (max-width: 800px) {
+  .hero__title {
+    margin-top: 5%;
+  }
+  .hero__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form__row {
+    margin-bottom: 20px;
+  }
 }
 
-.form__input-ico {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  line-height: 50px;
-  padding-left: 18px;
-  padding-top: 8px;
+@media (max-width: 630px) {
+  .hero__title {
+    width: 90%;
+    font-size: 1.625rem;
+  }
+  .hero__paragraph {
+    font-size: 0.875rem;
+  }
 }
 
-.form__input {
-  position: absolute;
-  top: 0%;
-  left: 15%;
-  padding: 0;
+@media (max-width: 500px) {
+  .hero__title {
+    font-size: 1.25rem;
+  }
 }
 
 .main-info {
