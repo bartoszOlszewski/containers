@@ -23,6 +23,25 @@
     }
 }
 
+
+.form {
+    &__input-ico {
+        height: 20px;
+        width: 16px;
+        line-height: 50px;
+    }
+
+    &__row {
+        color: $color-third;
+    }
+
+    &__input {
+        border-width: 0;
+        line-height: 50px;
+    }
+}
+
+
 .form {
     &__row {
         position: relative;
