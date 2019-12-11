@@ -645,5 +645,8 @@ strong {
         -ms-flex-order: 0;
             order: 0;
   }
+  .beti__perish {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
