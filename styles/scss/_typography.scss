@@ -48,6 +48,15 @@ h5 {
 //     padding: 0 15px;
 // }
 
+.site-header {
+    width: 100%;
+    min-height: 200px;
+}
+
+.hamburger {
+    display: none;
+}
+
 .wrapper {
     max-width: 1200px;
 }

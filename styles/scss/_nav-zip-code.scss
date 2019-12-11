@@ -1,0 +1,53 @@
+.mary {
+    display: flex;
+    justify-content: space-around;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__text {
+        padding: 0 25px;
+    }
+
+    &__input {
+        left: 25%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .mary {
+
+        &__btn {
+            margin-left: 10px;
+        }
+
+        &__row {
+            width: 180px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    // hamburgerMenu
+
+    .mary {
+        &__logo {
+            display: none;
+        }
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    // hamburgerMenu
+
+    .mary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
