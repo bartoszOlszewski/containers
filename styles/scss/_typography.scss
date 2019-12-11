@@ -126,3 +126,9 @@ strong {
 .brand {
     height: 50px;
 }
+
+.logo-span {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: calc-em(20px);
+}
