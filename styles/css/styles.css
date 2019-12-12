@@ -326,6 +326,7 @@ strong {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 40px 0;
 }
 
 .kate__logo {
@@ -777,6 +778,7 @@ strong {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 40px 0;
 }
 
 .mary__logo {
