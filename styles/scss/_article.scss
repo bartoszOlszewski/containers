@@ -1,0 +1,125 @@
+// kolor obj wyjąć w klasę do typography
+
+.article {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    &__text-col {
+        width: 50%;
+        padding: 5px;
+
+        // &-revers {
+        //     order: 1;
+        // wyrzucić do klasy right
+        // }
+    }
+
+    // sprawdzić czy height można dać inaczej
+
+    &__img-col {
+        position: relative;
+        width: 50%;
+        height: 500px;
+    }
+
+    &__img {
+        position: relative;
+        max-width: 90%;
+        // top: -35%;
+        left: 0;
+    }
+
+    &__big-obj {
+        position: absolute;
+        top: 20%;
+        right: -10%;
+        width: 50%;
+        height: 70%;
+        background-color: #ffae00;
+        z-index: -2;
+    }
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .article {
+        flex-direction: column;
+        align-items: center;
+
+        &__text-col {
+            width: 90%;
+        }
+
+        &__img {
+            top: 0;
+        }
+
+        &__big-obj {
+            top: 20%;
+        }
+    }
+}
+
+
+.article-contact {
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    min-height: 75px;
+    justify-content: space-around;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        max-width: 250px;
+        min-height: 75px;
+
+        &-img {
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            line-height: 75px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-number {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: calc-em(21px);
+            font-weight: 700;
+        }
+
+        &-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            opacity: .7;
+        }
+
+
+    }
+}
+
+@media (max-width: 800px) {
+    .article-contact {
+        flex-direction: column;
+        align-items: center;
+
+        &__box {
+            width: 90%;
+        }
+    }
+}
