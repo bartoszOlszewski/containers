@@ -920,6 +920,53 @@ strong {
   color: #fff;
 }
 
+.companies-banner {
+  background-image: url(/img/companies-banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.companies-banner__title {
+  color: #fff;
+  margin-top: 50px;
+}
+
+.companies-banner-p {
+  text-align: center;
+  color: #fff;
+}
+
+.companies-banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 500px;
+}
+
+.companies-banner__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.companies-banner__menu-p {
+  padding: 25px;
+}
+
 .city-banner__container {
   display: -webkit-box;
   display: -ms-flexbox;
