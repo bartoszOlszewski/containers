@@ -191,15 +191,6 @@ h5 {
   padding-right: 20px;
 }
 
-.site-header {
-  width: 100%;
-  min-height: 200px;
-}
-
-.hamburger {
-  display: none;
-}
-
 .wrapper {
   max-width: 1200px;
 }
@@ -270,6 +261,10 @@ strong {
   color: #4044df;
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+.logo-span-white {
+  color: #fff;
 }
 
 .upper {
@@ -866,6 +861,7 @@ strong {
 
 .mary__text {
   padding: 0 25px;
+  line-height: 54px;
 }
 
 .mary__input {
@@ -978,5 +974,46 @@ strong {
     -ms-flex-preferred-size: 61%;
         flex-basis: 61%;
   }
+}
+
+.city-banner {
+  background-image: url(/img/gdansk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.city-banner__title {
+  color: #fff;
+}
+
+.city-banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+}
+
+.city-banner__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.city-banner__menu-p {
+  padding: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+.city-banner {
+    background-image: url(/img/gdansk.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        color: $color-secondary;
+    }
+}
+
+.city-banner {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 500px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        // &-item {}
+
+        &-p {
+            padding: 25px;
+        }
+    }
+}

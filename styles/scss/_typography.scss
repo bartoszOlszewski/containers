@@ -63,15 +63,6 @@ h5 {
     padding-right: 20px;
 }
 
-.site-header {
-    width: 100%;
-    min-height: 200px;
-}
-
-.hamburger {
-    display: none;
-}
-
 .wrapper {
     max-width: 1200px;
 }
@@ -155,6 +146,11 @@ strong {
     color: $color-primary;
     font-weight: 700;
     font-size: calc-em(20px);
+
+    &-white {
+        color: $color-secondary;
+    }
+
 }
 
 // UPPERCASE
@@ -163,6 +159,9 @@ strong {
     text-transform: uppercase;
 }
 
+
+
+// FORMS
 
 
 .form {
