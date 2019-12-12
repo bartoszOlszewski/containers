@@ -22,6 +22,15 @@ ul {
   list-style: none;
 }
 
+h1 {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
 h2 {
   line-height: 1.2;
 }
@@ -225,15 +234,6 @@ strong {
   display: relative;
   width: 100%;
   min-height: 740px;
-}
-
-.hero__title {
-  width: 75%;
-  margin: 0 auto;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.2;
 }
 
 .hero__paragraph {
