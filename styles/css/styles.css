@@ -920,6 +920,37 @@ strong {
   color: #fff;
 }
 
+.city-banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+}
+
+.city-banner__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.city-banner__menu-p {
+  padding: 25px;
+}
+
 .companies-banner {
   background-image: url(/img/companies-banner.jpg);
   background-position: center;
@@ -928,7 +959,7 @@ strong {
 
 .companies-banner__title {
   color: #fff;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .companies-banner-p {
@@ -967,7 +998,23 @@ strong {
   padding: 25px;
 }
 
-.city-banner__container {
+.offer-banner {
+  background-image: url(/img/offer-banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.offer-banner__title {
+  color: #fff;
+  margin-top: 80px;
+}
+
+.offer-banner-p {
+  text-align: center;
+  color: #fff;
+}
+
+.offer-banner__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,13 +1022,13 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   min-height: 500px;
 }
 
-.city-banner__menu {
+.offer-banner__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,7 +1041,7 @@ strong {
           justify-content: flex-start;
 }
 
-.city-banner__menu-p {
+.offer-banner__menu-p {
   padding: 25px;
 }
 
