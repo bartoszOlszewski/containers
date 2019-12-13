@@ -1,0 +1,29 @@
+.oval {
+    padding: .7rem 20px 0 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__column {
+        width: 40%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1000px) {
+    .oval {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 80%;
+        }
+    }
+}
