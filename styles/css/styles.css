@@ -178,6 +178,10 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
 h5 {
   font-size: 1.125rem;
 }
@@ -1306,5 +1310,18 @@ strong {
   .oval__column {
     width: 80%;
   }
+}
+
+.slogan__section {
+  background-color: #4044df;
+  color: #fff;
+}
+
+.slogan__h4 {
+  text-align: center;
+}
+
+.slogan__p {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

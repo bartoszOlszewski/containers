@@ -1,0 +1,15 @@
+.slogan {
+    &__section {
+        background-color: $secBgColor;
+        color: $color-secondary;
+    }
+
+
+    &__h4 {
+        text-align: center;
+    }
+
+    &__p {
+        text-align: center;
+    }
+}
