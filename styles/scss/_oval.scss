@@ -1,29 +1,20 @@
 .oval {
-    padding: .7rem 20px 0 0;
-
-    &__container {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    &__column {
-        width: 40%;
-    }
+    display: flex;
+    align-items: flex-start;
 
     &__item {
-        display: flex;
-        align-items: flex-start;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: .7rem 20px 0 0;
+        background-repeat: no-repeat;
     }
-}
 
-@media (max-width: 1000px) {
-    .oval {
-        &__container {
-            flex-direction: column;
-        }
+    &-white {
+        background-image: url(/img/oval-white.svg);
+    }
 
-        &__column {
-            width: 80%;
-        }
+    &-blue {
+        background-image: url(/img/oval-blue.svg);
     }
 }
