@@ -103,3 +103,43 @@
         }
     }
 }
+
+.blog-banner {
+    background-image: url(/img/offer-banner.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 500px;
+    }
+}
+
+.price-banner {
+    background-image: url(/img/price-banner.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 500px;
+    }
+}
+
+
+.advice-banner {
+    background-image: url(/img/advice-banner.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 500px;
+    }
+}

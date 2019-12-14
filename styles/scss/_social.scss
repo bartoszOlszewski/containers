@@ -1,0 +1,27 @@
+.social {
+    width: 130px;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__icons {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-repeat: no-repeat;
+
+        &-fb {
+            background-image: url(/img/fb.svg);
+        }
+
+        &-tw {
+            background-image: url(/img/tw.svg);
+        }
+
+        &-in {
+            background-image: url(/img/in.svg);
+        }
+    }
+}

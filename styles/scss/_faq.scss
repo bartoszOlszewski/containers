@@ -1,0 +1,36 @@
+.faq {
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__question-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+        text-align: left;
+    }
+
+    &__icon {
+        padding: 50px;
+        background-image: url(/img/faq-button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__answer {
+        height: 100px;
+        opacity: 0;
+        transition: .6s;
+    }
+
+    &__open {
+        opacity: 1;
+        height: 100%;
+    }
+
+
+}
