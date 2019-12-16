@@ -95,28 +95,7 @@
 
 //     }
 
-//     &__slogan {
-//         position: relative;
-//         margin: 0;
-//         bottom: 20%;
-//         left: 50%;
-//         width: $big-width;
-//         transform: translateX(-50%);
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-start;
-
-//         &-box {
-//             display: inline-flex;
-//             flex-direction: column;
-//             width: 25%;
-//             margin-right: 7%;
-//         }
-
-//         &-logo {
-//             width: 50px;
-//         }
-//     }
+//     
 
 
 // }
@@ -125,6 +104,7 @@
 // NEW
 
 .main-info {
+    position: relative;
     width: 100%;
     height: 917px;
     background-color: $secondBgColor;
@@ -132,6 +112,7 @@
 
     &__container {
         margin: 0;
+        padding: 0 0 40px 60px;
         position: relative;
         top: -30%;
         left: 50%;
@@ -166,18 +147,41 @@
 
     &__img {
         position: relative;
-        top: -35%;
+        top: -32%;
         left: 0;
     }
 
     &__big-obj {
         position: absolute;
         top: 20%;
-        right: -10%;
+        right: -8%;
         width: 50%;
         height: 70%;
         background-color: #ffae00;
         z-index: -2;
+    }
+
+    &__slogan {
+        position: relative;
+        margin: 0;
+        bottom: 20%;
+        left: 50%;
+        width: $big-width;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &-box {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            margin-right: 7%;
+        }
+
+        &-logo {
+            width: 50px;
+        }
     }
 
 }

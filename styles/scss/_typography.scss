@@ -9,6 +9,7 @@ body {
     font-family: $firstFont;
     line-height: $baseLineHeight;
     color: $firstColor;
+
 }
 
 // PART II
@@ -68,7 +69,11 @@ body {
 
         &-s {
             font-size: calc-em(14px);
+        }
 
+        &-xl {
+            font-size: calc-em(21px);
+            font-weight: 700;
         }
     }
 

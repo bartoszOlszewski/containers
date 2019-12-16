@@ -46,3 +46,35 @@
         height: 300px;
     }
 }
+
+.contact {
+
+    display: flex;
+    align-items: center;
+
+
+
+
+    &__item {
+
+        margin-right: 40px;
+
+    }
+
+    &__white {
+        position: absolute;
+        bottom: 15%;
+        left: 8%;
+    }
+
+    &__list {
+        justify-content: center;
+    }
+
+    &__column {
+        width: 28%;
+        ;
+    }
+
+
+}
