@@ -20,6 +20,10 @@ body {
 .section {
     width: 100%;
     overflow: hidden;
+
+    &-asym {
+        overflow: unset;
+    }
 }
 
 // container
@@ -75,6 +79,10 @@ body {
 
         &-l {
             line-height: 27px;
+        }
+
+        &-xxl {
+            line-height: 36px;
         }
 
     }
