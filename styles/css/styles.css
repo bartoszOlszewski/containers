@@ -149,6 +149,7 @@ body {
 
 .section {
   width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -1297,7 +1298,7 @@ ul {
 .article__img {
   position: relative;
   max-width: 90%;
-  right: -30%;
+  right: -20%;
 }
 
 .article__big-obj {
