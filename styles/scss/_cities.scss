@@ -1,19 +1,19 @@
 .cities {
-    border: 1px solid #f5f5f9;
-    padding-bottom: 40px;
-}
+    @include frame;
 
-.anna {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-height: 100vh;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-height: 100vh;
+    }
 
-    &__h1 {
+    &__title {
         flex-basis: 10vh;
         text-align: center;
         line-height: 10vh;
+        padding-bottom: 40px;
     }
 
     &__list {
@@ -28,30 +28,38 @@
         display: block;
         width: 100%;
         flex-basis: 21%;
+        // text-align: left;
     }
 
     &__text {
-        text-align: center;
-        font-size: calc-em(14px);
+        color: $secondColor;
+        @include footer;
     }
+
 }
 
 @media (max-width: 1150px) {
-    .anna__item {
-        flex-basis: 45%;
+    .cities {
+        padding: 100px 0 80px 0;
+
+        &__item {
+            flex-basis: 45%;
+        }
     }
 }
 
 @media (max-width: 600px) {
-    .anna {
+    .cities {
         &__h1 {
             flex-basis: 5vh;
             line-height: 5vh;
-            font-size: 1.5em;
+            // font-size: 1.5em;
         }
 
         &__item {
-            flex-basis: 80%;
+            flex-basis: 51%;
         }
+
+
     }
 }

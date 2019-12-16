@@ -6,48 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>redskip.pl - zamów kontener na gruz lub śmieci</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/styles.css">
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="header__home-site">
         <div class="container">
-            <div class="kate">
-                <div class="kate__logo">
-                    <a href="#"><p class="kate__text paragraph">red<span class="logo-span">skip</span>.pl</p></a>
+            <div class="banner__home-site">
+                <div class="nav">
+                    <div class="nav__logo logo">
+                        <a href="#" class=""><p class="logo__regular nav__text">red<span class="logo--span">skip</span>.pl</p></a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/oferta.html"><p class="nav__text nav__paragraph paragraph__f-size-s">Oferta</p></a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/wymiary.html"><p class="nav__text nav__paragraph paragraph__f-size-s">Wymiar kontenerów</p></a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/cennik.html"><p class="nav__text nav__paragraph paragraph__f-size-s">Cennik</p></a>
+                    </div>
+                    <div class="nav__item">
+                        <button class="btn btn--primary js-open-form">Wyceń usługę</button>
+                    </div>
                 </div>
-                <div class="kate__item">
-                    <a href="#"><p class="kate__text paragraph">Oferta</p></a>
-                </div>
-                <div class="kate__item">
-                    <a href="#"><p class="kate__text paragraph">Wymiar kontenerów</p></a>
-                </div>
-                <div class="kate__item">
-                    <a href="#"><p class="kate__text paragraph">Cennik</p></a>
-                </div>
-                <div class="kate__item">
-                    <button class="btn btn--primary js-open-form">Wyceń usługę</button>
+                <div class="banner__info">
+                    <h1 class="title__h1 "><span class="color-secondary">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i
+                        innych
+                        odpadów w kontenerach
+                    </h1>
+                    <p class="paragraph__f-size-l banner__info--paragraph">Wyceń wywóz gruzu lub innych odpadów</p>
+                    <form class="banner__info--form">
+                        <div class="form__row">
+                            <img src="/img/location.svg" alt="location icon" class="form__input-ico">
+                            <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
+                        </div>
+                        <input type="submit" class="btn btn--primary js-open-form" value="Wyceń usługę">
+                    </form>
                 </div>
             </div>
         </div>
     </header>
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero__title "><span class="color-primary">Nr 1 w Polsce</span> pod wzgędem wywozu gruzu i innych
-                odpadów w kontenerach
-            </h1>
-            <p class="paragraph--size-l hero__paragraph">Wyceń wywóz gruzu lub innych odpadów</p>
-            <form class="hero__form">
-                <div class="form__row">
-                    <img src="/img/location.svg" alt="location icon" class="form__input-ico">
-                    <input type="text" class="form__input" placeholder="Wpisz kod pocztowy">
-                </div>
-                <input type="submit" class="btn btn--primary js-open-form" value="Wyceń usługę">
-            </form>
 
-        </div>
-    </section>
-    <section class="main-info">
+    <section class="section main-info">
         <div class="container main-info__container">
             <div class="main-info-inside">
                 <div class="main-info__text-col">
@@ -155,111 +158,126 @@
             </div>
         </div>
     </section>
-    <section class="details">
+
+    <section class="section">
         <div class="container">
-            <div class="article">
-                <div class="article__text-col">
-                    <h2 class="details__title">Nasza oferta to nie tylko wywóz gruzu</h2>
-                    <h4 class="paragraph-title">Oferujemy</h4>
-                    <div class="list">
-                        <div class="list__column">
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz gruzu</p>
+            <div class="list">
+                <div class="list__item">
+                    <div class="article__item">
+
+                        <h2 class="title__h2">Nasza oferta to nie tylko wywóz gruzu</h2>
+                    </div>
+                    <div class="article__item">
+
+                        <h4 class="title__h4 ">Oferujemy</h4>
+                        <div class="list-small ">
+                            <div class="list-small__column ">
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz gruzu</p>
+                                    </div>
+                                </div>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz śmieci po remoncie</p>
+                                    </div>
+                                </div>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz odpadów budowlanych</p>
+                                    </div>
+                                </div>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz mebli i gabarytów</p>
+                                    </div>
+                                </div>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz odpadów zielonych</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz śmieci po remoncie</p>
+                            <div class="list-small__column">
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz ziemi</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz odpadów budowlanych</p>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz materiałów izolacyjnych</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz mebli i gabarytów</p>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz papy</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz odpadów zielonych</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list__column">
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz ziemi</p>
-                                </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz materiałów izolacyjnych</p>
-                                </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz papy</p>
-                                </div>
-                            </div>
-                            <div class="list__item">
-                                <div class="oval">
-                                    <div class="oval__item oval-blue"></div>
-                                    <p class="paragraph">wywóz innych śmieci, odpadów i nieczystości
-                                        w kontenerach</p>
+                                <div class="list-small__item">
+                                    <div class="oval">
+                                        <div class="oval__item oval-blue"></div>
+                                        <p class="paragraph">wywóz innych śmieci, odpadów i nieczystości
+                                            w kontenerach</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h4 class="paragraph-title">Dodatkowe usługi, które możemy zaoferować</h4>
-                    <p class="paragraph">Standardowo podstawiamy kontener na okres <strong> 5-7 dni roboczych.</strong>
-                        Oprócz tego oferujemy również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na
-                        załadowanie kontenera), <strong>ekspres</strong> (podstawienie tego samego dnia - tylko
-                        telefonicznie), <strong>wynajem dlugoterminowy</strong> oraz <strong>podstawienie kontenera rano
-                            i
-                            odbiór tego samego dnia</strong> po południu.</p>
+                    <div class="article__item">
+                        <h4 class="title__h4 ">Dodatkowe usługi, które możemy zaoferować</h4>
+                        <p class="paragraph__l-height-l">Standardowo podstawiamy kontener na okres
+                            <strong> 5-7 dni
+                                roboczych.</strong>
+                            Oprócz tego oferujemy również: <strong>załadunek na poczekaniu</strong> (masz 30 minut na
+                            załadowanie kontenera), <strong>ekspres</strong> (podstawienie tego samego dnia - tylko
+                            telefonicznie), <strong>wynajem dlugoterminowy</strong> oraz <strong>podstawienie kontenera
+                                rano
+                                i
+                                odbiór tego samego dnia</strong> po południu.
+                        </p>
+                    </div>
+                </div>
+                <div class="list__item">
+                    <div class="article__img"><img src="/img/wywoz1.jpg" alt="kontener"></div>
+                    <div class="article__big-obj"></div>
+                    <div class="article__small-obj"></div>
                 </div>
 
+
+
+                <!-- poprawka w stosunku do projektu - usunięcie kropki z tekstu -->
+
+
+
             </div>
-
-
-            <!-- poprawka w stosunku do projektu - usunięcie kropki z tekstu -->
-
-
-            <div class="container">
-                <div class="details__serv">
-
-                </div>
-                <div class="details__img"><img src="/img/kontener-mulda.jpg" alt="rubble container"></div>
-            </div>
+        </div>
     </section>
-    <!-- class bardzo robocza - do skrócenia -->
+
     <section class="refs">
-        <div class="lila container">
-            <div class="lila__column lila__left refs__details">
-                <div class="lila__item lila__left-title">
-                    <h4 class="h4">Dodatkowe informacje</h4>
+        <div class="container refs__container">
+            <!-- <div class="refs__frame refs__frame-l"> -->
+            <div class="refs__column">
+                <div class="refs__item refs__left-title">
+                    <h4 class="title__h4">Dodatkowe informacje</h4>
                 </div>
-                <div class="lila__item lila__text">
-                    <p class="paragraph">
-                        Na stronie <a class="color-primary" href="#">wymiary kontenerów</a> znajdzsiesz orientacyjne
+                <div class="refs__item refs__text">
+                    <p class="paragraph__l-height-l">
+                        Na stronie <a class="a a__paragraph" href="#">wymiary kontenerów</a> znajdzsiesz orientacyjne
                         wymiary
                         kontenerów z opisem
                         sytuacji, w których taki kontener się sprawdzi i do jakich odpadów jest przeznaczony. Jeśli
                         szukasz
                         wiadomości na temat rodzajów odpadów, jakie mozna wrzucić do kontenera to znajdziesz je na
-                        podstronie <a class="color-primary" href="#">porady i informacje</a>. Na tej samej stronie
+                        podstronie <a class="a a__paragraph" href="#">porady i informacje</a>. Na tej samej stronie
                         umieszczone
                         są też informacje
                         na temat - pozwolenia na zajęcie pasa ruchu - tam dowiesz się czy potrzebujesz takiego
@@ -267,12 +285,13 @@
                         przy zamawianiu kontenera.
                     </p>
                 </div>
-                <div class="lila__item lila__left-title-small">
-                    <h5 class="h5">Oprócz podanych wyżej informacji na stronie z poradami znajdziesz odpowiedzi na
+                <div class="refs__item">
+                    <p class="paragraph__title">Oprócz podanych wyżej informacji na stronie z poradami znajdziesz
+                        odpowiedzi na
                         pytania:
-                    </h5>
+                    </p>
                 </div>
-                <div class="lila__item lila__list">
+                <div class="refs__item refs__list">
                     <ol class="ordered-list">
                         <li>Jak wynająć kontener na śmieci?</li>
                         <li>Co jest wliczone w cenę usługi</li>
@@ -281,28 +300,22 @@
                     </ol>
                 </div>
             </div>
-            <div class="lila__column lila__right refs__opinion js-opinion-1">
-                <div class="lila__item lila__right-title-big">
-                    <h3 class="refs__opinion-title">"Podstawili kontener na czas, na plus też miła obsługa!"</h3>
+            <!-- </div> -->
+            <!-- <div class="refs__frame"> -->
+            <div class="refs__column">
+                <div class="refs__item refs__item--right">
+                    <h3 class="title__h3 js-opinion-1">"Podstawili kontener na czas, na plus też miła obsługa!"</h3>
                 </div>
-                <div class="lila__item lila__text">
-                    <p class="paragraph refs__opinion-text">Maciej W. ocenił redskip.pl na 5</p>
+                <div class="refs__item">
+                    <p class="paragraph--f-size-l paragraph__l-height-xl js-client-1">Maciej W. ocenił redskip.pl na 5
+                    </p>
                     <div class="refs__stars">
-                        <img src="/img/star.svg" alt="golden star" class="stars">
-                        <img src="/img/star.svg" alt="golden star" class="stars">
-                        <img src="/img/star.svg" alt="golden star" class="stars">
-                        <img src="/img/star.svg" alt="golden star" class="stars">
-                        <img src="/img/star.svg" alt="golden star" class="stars">
+
                     </div>
                 </div>
-                <div class="lila__item refs__stars">
-                    <!-- można zrobić strzałkę jako pseudo element -->
-                    <div class="refs__left-star">
-                        <img src="/img/arrow-left.svg" alt="left-arrow" class="refs__left-arrow">
-                    </div>
-                    <div class="refs__right-star">
-                        <img src="/img/arrow-right.svg" alt="right-arrow" class="refs__right-arrow">
-                    </div>
+                <div class="refs__item refs__item--arrow">
+                    <button class="refs__arrow refs__arrow--left js-arrow-left"></button>
+                    <button class="refs__arrow refs__arrow--right js-arrow-right"></button>
 
                 </div>
 
@@ -310,64 +323,66 @@
 
             </div>
 
+        </div>
 
     </section>
+
     <section class="cities">
-        <div class="container">
-            <div class="anna">
-                <h1 class="h1 anna__h1">Jakie miasta obsługujemy</h1>
-                <div class="anna__list">
-                    <div class="anna__item">
-                        <a href="#"><p class="anna__text color-primary">Wywóz gruzu i śmieci Gdańsk</p></a>
-                        <a href="#"><p class="anna__text color-primary">Wywóz gruzu i śmieci Gdynia</p></a>
-                    </div>
-                    <div class="anna__item">
-                        <a href="#"><p class="anna__text color-primary">Wywóz gruzu i śmieci Sopot</p></a>
-                        <a href="#"><p class="anna__text color-primary">Wywóz śmieci Warszawa</p></a>
-                    </div>
-                    <div class="anna__item">
-                        <a href="#"><p class="anna__text color-primary">Wywóz śmieci Kraków</p></a>
-                        <a href="#"><p class="anna__text color-primary">Wywóz śmieci Łódź</p></a>
-                    </div>
-                    <div class="anna__item">
-                        <a href="#"><p class="anna__text color-primary">Wywóz gruzu Toruń</p></a>
-                        <a href="#"><p class="anna__text color-primary">Wywóz gruzu Bydgoszcz</p></a>
-                    </div>
+        <div class="container cities__container">
+            <h3 class="title__h3 cities__title">Jakie miasta obsługujemy</h3>
+            <div class="cities__list">
+                <div class="cities__item">
+                    <a href="#" class="a"><p class="cities__text">Wywóz gruzu i śmieci Gdańsk</p></a>
+                    <a href="#" class="a"><p class="cities__text">Wywóz gruzu i śmieci Gdynia</p></a>
+                </div>
+                <div class="cities__item">
+                    <a href="#" class="a"><p class="cities__text">Wywóz gruzu i śmieci Sopot</p></a>
+                    <a href="#" class="a"><p class="cities__text">Wywóz śmieci Warszawa</p></a>
+                </div>
+                <div class="cities__item">
+                    <a href="#" class="a"><p class="cities__text">Wywóz śmieci Kraków</p></a>
+                    <a href="#" class="a"><p class="cities__text">Wywóz śmieci Łódź</p></a>
+                </div>
+                <div class="cities__item">
+                    <a href="#" class="a"><p class="cities__text">Wywóz gruzu Toruń</p></a>
+                    <a href="#" class="a"><p class="cities__text">Wywóz gruzu Bydgoszcz</p></a>
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="footer">
+
+        <!-- footer styles connected with _footer _typography -->
+
         <div class="container">
-            <div class="beti">
-                <div class="beti__list">
-                    <div class="beti__item beti__first">
-                        <div class="beti__logo">
-                            <a href="#"><p class="beti__text">red<span class="logo-span">skip</span>.pl</p></a>
-                        </div>
+            <div class="footer__list">
+                <div class="footer__item">
+                    <div class="logo">
+                        <a href="#" class="a"><p class="logo__small">red<span class="logo__small--span">skip</span>.pl</p></a>
                     </div>
-                    <div class="beti__item beti__second">
-                        <a href="#" class="beti__perish"><p class="beti__text">Redskip</p></a>
-                        <a href="#"><p class="beti__text">Oferta</p></a>
-                        <a href="#"><p class="beti__text">Wymiary kontenerów</p></a>
-                        <a href="#"><p class="beti__text">Porady i informacje</p></a>
-                        <a href="#"><p class="beti__text">Dla firm</p></a>
-                        <a href="#"><p class="beti__text">Cennik</p></a>
-                        <a href="#"><p class="beti__text">Lokalizacje</p></a>
-                        <a href="#"><p class="beti__text">O nas</p></a>
-                        <a href="#"><p class="beti__text">Kontakt</p></a>
+                </div>
+                <div class="footer__item">
+                    <a href="#"class="a footer__text-fat footer__perish"><p class="-fat">Redskip</p></a>
+                    <a href="#" class="a"><p class="footer__text">Oferta</p></a>
+                    <a href="#" class="a"><p class="footer__text">Wymiary kontenerów</p></a>
+                    <a href="#" class="a"><p class="footer__text">Porady i informacje</p></a>
+                    <a href="#" class="a"><p class="footer__text">Dla firm</p></a>
+                    <a href="#" class="a"><p class="footer__text">Cennik</p></a>
+                    <a href="#" class="a"><p class="footer__text">Lokalizacje</p></a>
+                    <a href="#" class="a"><p class="footer__text">O nas</p></a>
+                    <a href="#" class="a"><p class="footer__text">Kontakt</p></a>
+                </div>
+                <div class="footer__item footer__third">
+                    <a href="#" class="a"><p class="footer__text-fat">Noty prawne</p></a>
+                    <a href="#" class="a"><p class="footer__text">Regulamin</p></a>
+                    <a href="#" class="a"><p class="footer__text">Polityka prywatności</p></a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__img">
+                        <a href="#"><img src="/img/payment.jpg" alt="online payment partners"></a>
                     </div>
-                    <div class="beti__item beti__third">
-                        <a href="#"><p class="beti__text">Noty prawne</p></a>
-                        <a href="#"><p class="beti__text">Regulamin</p></a>
-                        <a href="#"><p class="beti__text">Polityka prywatności</p></a>
-                    </div>
-                    <div class="beti__item beti__fourth">
-                        <div class="beti__img">
-                            <a href="#"><img src="/img/payment.jpg" alt="online payment partners"></a>
-                        </div>
-                        <p class="beti__text">Obsługujemy płatności online</p>
-                    </div>
+                    <p class="footer__text-fat">Obsługujemy płatności online</p>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     background-size: cover;
 
     &__title {
-        color: $color-secondary;
+        color: $thirdColor;
     }
 }
 
@@ -36,13 +36,13 @@
     background-size: cover;
 
     &__title {
-        color: $color-secondary;
+        color: $thirdColor;
         margin-top: 80px;
     }
 
     &-p {
         text-align: center;
-        color: $color-secondary;
+        color: $thirdColor;
     }
 }
 
@@ -73,13 +73,13 @@
     background-size: cover;
 
     &__title {
-        color: $color-secondary;
+        color: $thirdColor;
         margin-top: 80px;
     }
 
     &-p {
         text-align: center;
-        color: $color-secondary;
+        color: $thirdColor;
     }
 }
 
@@ -142,4 +142,8 @@
         justify-content: flex-start;
         min-height: 500px;
     }
+}
+
+.contact-banner {
+    height: 50vh;
 }

@@ -1,67 +1,82 @@
-// .refs {
-//     width: 100%;
-//     min-height: 700px;
-//     background-color: $lightBgColor;
-
-//     &__container {
-//         display: flex;
-//         justify-content: space-around;
-//     }
-
-//     &__details {
-//         display: block;
-//         width: 45%;
-//         padding: 40px 0;
-//     }
-
-//     &__gallery {
-//         display: block;
-//         width: 35%;
-//         padding: 80px;
-//     }
-
-//     &__opinion-text {
-//         font-size: calc-em(18px);
-//         line-height: calc-em(48px);
-//         font-weight: 400;
-//     }
-
-//     &__stars {
-//         padding-bottom: 40px;
-//     }
-// }
-
 .refs {
-    width: 100%;
-    min-height: 700px;
-    background-color: $lightBgColor;
-
-}
-
-.lila {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    min-height: 630px;
+    background-color: $thirdBgColor;
 
-    &__column {
-        width: 38%;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0;
     }
 
-    &__left-title-small {
-        width: 80%;
+    &__column {
+        width: 45%;
+    }
+
+    &__item {
+        padding: 10px 0;
+
+        &--right {
+            width: 340px;
+        }
+
+        &--arrow {
+            display: flex;
+        }
+    }
+
+    &__stars {
+        display: block;
+        background-image: url(/img/star.svg);
+        background-repeat: repeat-x;
+        height: 20px;
+        width: 95px;
+    }
+
+    &__arrow {
+        all: unset;
+        display: block;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 25px;
+        margin: 10px;
+        background-image: url(/img/arrow-left.svg);
+
+        &--right {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__text {
+        line-height: 24px;
     }
 }
 
 @media (max-width: 1000px) {
-    .lila {
-        flex-direction: column;
+    .refs {
+        &__container {
+            flex-direction: column;
+            padding: 0;
+        }
+
 
         &__column {
             width: 80%;
-        }
-
-        &__right-title-big {
-            width: 60%
+            margin: 50px 0;
         }
     }
 }
+
+// &__frame {
+//     // display: flex;
+//     width: calc(50% - 2px);
+//     // height: 100%;
+//     background-color: yellow;
+
+//     &-l {
+//         border-right: 2px solid red;
+//     }
+// }

@@ -1,117 +1,90 @@
+// PART I
+
 // STYLE RESET
 
 body {
     @include body-reset;
     font-size: calc-em(16px);
-    font-family: $primaryFont;
-    line-height: calc-em(32px);
-    color: $color-Fbody;
+    font-weight: 400;
+    font-family: $firstFont;
+    line-height: $baseLineHeight;
+    color: $firstColor;
 }
 
-a {
-    text-decoration: none;
-    color: $color-Fbody;
+// PART II
+
+// POSITION STYLES
+
+// section
+
+.section {
+    width: 100%;
 }
 
-.p-clear {
-    all: unset;
-}
-
-ul {
-    list-style: none;
-}
-
-h1 {
-
-    width: 75%;
-    margin: 0 auto;
-    font-size: calc-em(48px);
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.2;
-
-}
-
-h2 {
-    line-height: 1.2;
-}
-
-h3 {
-    font-size: calc-em(36px);
-    line-height: calc-em(48px);
-    font-weight: 700;
-}
-
-h4 {
-    font-size: calc-em(24px);
-}
-
-h5 {
-    font-size: calc-em(18px);
-}
-
-.ordered-list {
-    padding-inline-start: 40;
-}
-
-// CONTAINERS
-
-// .container {
-//     display: block;
-//     width: 100%;
-//     max-width: 90%;
-//     padding: 0 15px;
-// }
-
-
-
-.wrapper {
-    max-width: 1200px;
-}
+// container
 
 .container {
-    display: block;
     max-width: $big-width;
     margin: 0 auto;
 }
 
 @media (max-width: 900px) {
     .container {
-        max-width: none;
-        width: 100%;
+        max-width: 100%;
     }
 }
 
 
-// TAG STYLES
+// PART III
 
-.btn {
-    width: 180px;
-    height: 50px;
-    margin-left: 76px;
-    line-height: 50px;
-    text-align: center;
-    background-color: $secBgColor;
-    box-shadow: $box-shadow;
-    color: $color-secondary;
-    border-radius: 5px;
-    font-size: calc-em(14px);
-}
+// TEXT STYLES
 
-// <p>
+// text
+// from body
+// font-size: 16px
+// font-weight: 400;
+// font-family: $primaryFont;
+// line-height: 24px;
+// color: #262626;
+
+// .text {
+//     &__small {
+//         font-size: calc-em(14px);
+//     }
+// }
+
 .paragraph {
-    font-size: calc-em(16px);
-    line-height: calc-em(24px);
 
-    &--size-l {
-        font-size: calc-em(18px);
-        line-height: 2;
+
+    &__f-size {
+        &-l {
+            font-size: calc-em(18px);
+        }
+
+        &-s {
+            font-size: calc-em(14px);
+
+        }
     }
 
-    &--size-s {
-        font-size: calc-em(14px);
+    &__l-height {
+        &-xl {
+            line-height: 48px;
+        }
+
+        &-l {
+            line-height: 27px;
+        }
 
     }
+
+    &__title {
+        font-weight: 700;
+    }
+
+
+
+
 }
 
 strong {
@@ -119,43 +92,73 @@ strong {
 }
 
 
-.paragraph-title {
-    font-size: calc-em(24px);
+// Titles
+
+.title {
     font-weight: 700;
-}
 
-
-
-// COLOR CLASSES
-
-.color {
-    &-primary {
-        color: $color-primary;
+    &__h1 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: calc-em(48px);
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2;
     }
 
-    &-secondary {
-        color: $color-secondary;
-    }
-}
-
-// LOGO
-
-.brand {
-    height: 50px;
-}
-
-.logo-span {
-    color: $color-primary;
-    font-weight: 700;
-    font-size: calc-em(20px);
-
-    &-white {
-        color: $color-secondary;
+    &__h2 {
+        font-size: calc-em(72px);
+        line-height: 78px;
     }
 
+    &__h3 {
+        font-size: calc-em(36px);
+        line-height: 48px;
+    }
+
+    &__h4 {
+        font-size: calc-em(24px);
+        line-height: 24px;
+    }
+
+
 }
 
-// UPPERCASE
+
+
+
+// h2 {
+//     line-height: 1.2;
+// }
+
+// h3 {
+//     font-size: calc-em(36px);
+//     line-height: calc-em(48px);
+//     font-weight: 700;
+// }
+
+// h4 {
+//     font-size: calc-em(24px);
+// }
+
+// h5 {
+//     font-size: calc-em(18px);
+// }
+
+
+// links
+
+a {
+    text-decoration: none;
+    color: $firstColor;
+}
+
+
+// color: $secondColor;
+//     line-height: 27px;
+//     font-weight: 700;
+
+// uppercase
 
 .upper {
     text-transform: uppercase;
@@ -163,59 +166,109 @@ strong {
 
 
 
-// FORMS
 
+// PART IV
 
-.form {
-    &__input-ico {
-        height: 20px;
-        width: 16px;
-        line-height: 50px;
+// BACKGROUND & COLOR 
+
+.color {
+    &-primary {
+        color: $firstColor;
     }
 
-    &__row {
-        color: $color-third;
-        position: relative;
-        width: 350px;
-        height: 50px;
-        box-shadow: $box-shadow;
-        border-radius: 5px;
-        border: 2px solid #4044df;
-        background-color: $primaryBgColor;
-    }
-
-    &__input {
-        border-width: 0;
-        line-height: 50px;
-        position: absolute;
-        top: 0%;
-        left: 15%;
-        padding: 0;
-
-        &-ico {
-            position: absolute;
-            top: 10%;
-            left: 0;
-            line-height: 50px;
-            padding-left: 18px;
-            padding-top: 8px;
-        }
+    &-secondary {
+        color: $secondColor;
     }
 }
 
-@media (max-width: 500px) {
-    .form {
-        &__row {
-            width: 180px;
-        }
 
-        &__input {
-            left: 25%;
 
-            &-ico {
-                padding-left: 20px;
-                padding-top: 8px;
-            }
+
+// PART V
+
+// SMALL COMPONENTS
+
+// logo
+
+// brand is not checked
+.brand {
+    height: 50px;
+}
+
+// &__logo {
+//     font-size: calc-em(18px);
+// }
+
+.logo {
+    font-size: calc-em(24px);
+
+    &__small {
+        font-size: calc-em(18px);
+
+        &--span {
+            font-size: calc-em(20px);
+            @include span;
         }
     }
+
+    &--span {
+        font-size: calc-em(26px);
+        @include span;
+    }
+
+
+}
+
+
+
+
+
+// .logo-span {
+//     color: $firstColor;
+//     font-weight: 700;
+//     font-size: calc-em(20px);
+
+//     &-white {
+//         color: $secondColor;
+//     }
+
+// }
+
+// buttonów jest kilka - do wrzucenia w osobny plik
+
+.btn {
+    width: 180px;
+    height: 50px;
+    margin-left: 76px;
+    line-height: 50px;
+    text-align: center;
+    background-color: $secondBgColor;
+    box-shadow: $box-shadow;
+    color: $thirdColor;
+    border-radius: 5px;
+    font-size: calc-em(14px);
+}
+
+
+
+
+
+// UWAGA!!!!!!!!!!!!!!
+
+// WSZYSTKO PONIŻEJ DO SPRAWDZENIA!!!!!!!!!
+
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+
+.ordered-list {
+    padding-inline-start: 40;
 }

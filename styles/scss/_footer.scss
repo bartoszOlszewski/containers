@@ -1,13 +1,7 @@
-.footer {
-    border: 1px solid #f5f5f9;
-    padding-top: 40px;
-}
+// style footera do połączenia z cities
 
-.beti {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.footer {
+    @include frame;
     max-height: 100vh;
     text-align: center;
 
@@ -23,16 +17,24 @@
         display: block;
         width: 100%;
         flex-basis: 21%;
-        font-size: calc-em(14px);
+        text-align: left;
     }
 
-    &__logo {
-        font-size: calc-em(18px);
+    &__text {
+        @include footer;
+
+        &-fat {
+            font-weight: 700;
+        }
+    }
+
+    &__img {
+        padding-bottom: 20px;
     }
 }
 
 @media (max-width: 1150px) {
-    .beti {
+    .footer {
         &__item {
             flex-basis: 45%;
         }
@@ -44,15 +46,12 @@
 }
 
 @media (max-width: 600px) {
-    .beti {
-        &__h1 {
-            flex-basis: 5vh;
-            line-height: 5vh;
-            font-size: 1.5em;
-        }
+    .footer {
+
 
         &__item {
-            flex-basis: 80%;
+            flex-basis: 51%;
+
         }
 
         &__third {

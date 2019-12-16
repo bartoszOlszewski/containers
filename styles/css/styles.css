@@ -1105,6 +1105,10 @@ strong {
   min-height: 500px;
 }
 
+.contact-banner {
+  height: 50vh;
+}
+
 .blog {
   display: -webkit-box;
   display: -ms-flexbox;

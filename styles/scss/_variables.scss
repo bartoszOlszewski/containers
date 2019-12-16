@@ -1,5 +1,6 @@
 // FONT FAMILY
-$primaryFont: 'roboto',
+// $primaryFont: "Sofia Pro Regular";
+$firstFont: 'Lato',
 sans-serif;
 
 
@@ -11,14 +12,14 @@ $headingLineHeight : 1.2;
 
 // COLORS
 
-$color-primary: #4044df;
-$color-secondary: #fff;
-$color-third: #8d91bc;
-$color-Fbody: #262626;
+$firstColor: #262626;
+$secondColor: #4044df;
+$thirdColor: #fff;
+$fourthColor: #8d91bc;
 
-$primaryBgColor: #fff;
-$secBgColor: #4044df;
-$lightBgColor: #f5f5f9;
+$firstBgColor: #fff;
+$secondBgColor: #4044df;
+$thirdBgColor: #f5f5f9;
 
 // BOX SHADOW
 
@@ -28,9 +29,4 @@ $box-shadow: 0 6px 12px rgba(64, 68, 223, 0.16);
 
 // WIDTH
 
-$big-width: 90%;
-
-
-// .list-100
-
-// $list-100: 120px;
+$big-width: 80%;

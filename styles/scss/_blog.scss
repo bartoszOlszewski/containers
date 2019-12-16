@@ -4,18 +4,37 @@
     flex-wrap: wrap;
     justify-content: space-around;
     min-height: 60vh;
+    margin-top: 10vh;
 
-    &__h1 {
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         flex-basis: 10vh;
+
+        line-height: 8vh;
+        margin-bottom: 5vh;
+
+    }
+
+    &__h3 {
         text-align: center;
-        line-height: 10vh;
+        line-height: 0;
     }
 
     &__p {
-        margin-bottom: 10vh;
-        flex-basis: 10vh;
+
         text-align: center;
-        line-height: 10vh;
+
+
+    }
+
+    &__date {
+        font-size: calc-em(12px);
+        color: $fourthColor;
+        line-height: 41px;
+        ;
     }
 
     &__list {
@@ -36,11 +55,23 @@
     &__text {
         text-align: left;
         font-size: calc-em(14px);
+        color: #1e1826;
+        font-weight: 600;
+        line-height: 24px;
+        font-size: calc-em(18px);
+
+        &-b {
+            color: $secondColor;
+            line-height: 40px;
+        }
     }
 
-    &__h3 {
+    &__h5 {
         text-align: center;
-        line-height: 10vh;
+        line-height: 2vh;
+        margin-bottom: 5vh;
+        color: $secondColor;
+        font-weight: 700;
     }
 }
 
@@ -60,9 +91,13 @@
 
 @media (max-width: 600px) {
     .blog {
-        &__h1 {
+        &__head {
             flex-basis: 5vh;
             line-height: 5vh;
+
+        }
+
+        &__h3 {
             font-size: 1.5em;
         }
 
